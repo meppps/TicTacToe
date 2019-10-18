@@ -1,0 +1,32 @@
+
+.navbar-brand{
+    text-align: center;
+}
+
+body{
+    background: grey;
+}
+
+.board{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;   
+}
+
+.table-light{
+    empty-cells: show;
+    table-layout: fixed;
+    width: 200px;
+    color: black;
+}
+
+td{
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+    overflow: hidden;
+    font-size: 100px;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    text-align: center;
+}
