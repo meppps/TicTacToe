@@ -17,13 +17,14 @@
 
         // var currentPlayer = 'X';
 
-        var player1 = 'X';
-        var player2 = 'O';
+        // var player1 = 'X';
+        // var player2 = 'O';
 
         let player = 'X';
-        
 
-        function switchPlayerX(){
+        
+        // Alternate Players
+        function switchPlayer(){
         switch(player){
             case 'X':
                 player = 'O';
@@ -31,28 +32,21 @@
             case 'O':
                 player = 'X';
                 break;
-                        }
-                                    
-        }
+                        };                        
+        };
 
-        // function switchPlayerO(){
-        //     switch(player){
-        //         case 'O':
-        //            player = 'X';
-                   
-        //     }
-        //     break
-        // }
-
-
+        
+ 
         function takeTurn(e){
+
+            if(e.target.innnerHTML == null){
             e.target.innerHTML = player;
-            // if(player = 'X'){
-            switchPlayerX();
-            
-            // if(player = 'O'){
-            //     switchPlayerO();
-            // }
+            // console.log(e.target.innerHTML)
+            switchPlayer();
+    
+            }else if(e.target.innerHTML = 'O'){
+                console.log('hi')
+            }
             
         }
         
@@ -68,6 +62,8 @@
        cell8.addEventListener('click', takeTurn);
        cell9.addEventListener('click', takeTurn);
 
+       // Cell readings 
+    //    cell1.addEventListener('click', checkForWin);
        
    
 
