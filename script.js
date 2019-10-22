@@ -28,26 +28,31 @@
             case 'X':
                 player = 'O';
                 break;
-                        }           
+            case 'O':
+                player = 'X';
+                break;
+                        }
+                                    
         }
 
-        function switchPlayerO(){
-            switch(player){
-                case 'O':
-                   player = 'X';
+        // function switchPlayerO(){
+        //     switch(player){
+        //         case 'O':
+        //            player = 'X';
                    
-            }
-        }
+        //     }
+        //     break
+        // }
 
 
         function takeTurn(e){
             e.target.innerHTML = player;
-            if(player = 'X'){
+            // if(player = 'X'){
             switchPlayerX();
-            } 
-            if(player = 'O'){
-                switchPlayerO();
-            }
+            
+            // if(player = 'O'){
+            //     switchPlayerO();
+            // }
             
         }
         
